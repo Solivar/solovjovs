@@ -2,15 +2,90 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  width: 400px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
-  width: 300px;
-  height: 150px;
-  border: 2px solid black;
   display: flex;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .col {
+  width: 60%;
+}
 
+.col:last-child {
+  width: 40%;
+  margin-left: 20px;
+  border-left: 5px solid black;
+  padding-left: 20px;
+}
+
+.contacts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li {
+  margin-bottom: 5px;
+}
+
+.name {
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mqv7xy');
+  src:  url('fonts/icomoon.eot?mqv7xy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mqv7xy') format('truetype'),
+    url('fonts/icomoon.woff?mqv7xy') format('woff'),
+    url('fonts/icomoon.svg?mqv7xy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
 }
