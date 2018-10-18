@@ -4,6 +4,8 @@ body {
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   background-image: url('img/white_wall_hash.png');
+  height: 100%;
+  margin: 0;
 }
 
 p {
